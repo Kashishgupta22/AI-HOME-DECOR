@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Home Decor Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="sidebar">
+    <h2>🏠 AI Home Decor</h2>
+
+    <h3>Wall Colors</h3>
+    <button onclick="changeWallColor('#ffffff')">White</button>
+    <button onclick="changeWallColor('#d3d3d3')">Grey</button>
+    <button onclick="changeWallColor('#add8e6')">Blue</button>
+    <button onclick="changeWallColor('#f5f5dc')">Beige</button>
+
+    <hr>
+
+    <h3>AI Decor Generator</h3>
+    <input type="text" id="styleInput" placeholder="e.g. Modern Minimalist">
+    <button onclick="generateDecor()">Generate Suggestions</button>
+
+    <div id="aiSuggestions"></div>
+
+  </div>
+
+  <div id="scene-container"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
